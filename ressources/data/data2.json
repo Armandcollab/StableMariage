@@ -1,0 +1,16 @@
+{
+    "schools": [
+        {"name" : "School1", "capacity": 2},
+        {"name" : "School2", "capacity": 2}
+    ],
+    "students": [
+        {"name": "Student1"},
+        {"name": "Student2"},
+        {"name": "Student3"}
+    ],
+    "data": [
+        [[2,1], [1,1], [3,1]],
+        [[1,2], [2,2], [3,2]]
+    ],
+    "studentChoose" : false
+}
