@@ -2,14 +2,13 @@ package parcoursup;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import parsing.Data;
 import parsing.RankedData;
 
 public class Main {
 
-	public static final String DATA_PATH = "data/data3.json";;
+	public static final String DATA_PATH = "data/data.json";;
 
 	public static void main(String[] args) {
 		List<RankedElement> schools = new ArrayList<RankedElement>();
@@ -79,40 +78,41 @@ public class Main {
 		return (fullBinded || fullBinding);
 	}
 
-	private static Boolean setBindedInformations(List<RankedElement> schools, List<RankedElement> students) {
-		School school1 = new School("n7", 2);
-		School school2 = new School("ENSC", 3);
-
-		Student student1 = new Student("Armand");
-		student1.setRank(Map.of(1, school1, 2, school2));
-		Student student2 = new Student("Anaïs");
-		student2.setRank(Map.of(1, school1, 2, school2));
-		Student student3 = new Student("George");
-		student3.setRank(Map.of(1, school1, 2, school2));
-		Student student4 = new Student("Artur");
-		student4.setRank(Map.of(1, school1, 2, school2));
-		Student student5 = new Student("Joséphine");
-		student5.setRank(Map.of(2, school1, 1, school2));
-		Student student6 = new Student("Stéphanie");
-		student6.setRank(Map.of(2, school1, 1, school2));
-		Student student7 = new Student("Victor");
-		student7.setRank(Map.of(2, school1, 1, school2));
-
-		school1.setRank(
-				Map.of(1, student1, 2, student2, 3, student3, 4, student4, 5, student5, 6, student6, 7, student7));
-		school2.setRank(
-				Map.of(2, student1, 1, student2, 3, student3, 4, student4, 5, student5, 6, student6, 7, student7));
-
-		schools.add(school1);
-		schools.add(school2);
-		students.add(student1);
-		students.add(student2);
-		students.add(student3);
-		students.add(student4);
-		students.add(student5);
-		students.add(student6);
-		students.add(student7);
-
-		return true;
-	}
+	//Bouchonage
+//	private static Boolean setBindedInformations(List<RankedElement> schools, List<RankedElement> students) {
+//		School school1 = new School("n7", 2);
+//		School school2 = new School("ENSC", 3);
+//
+//		Student student1 = new Student("Armand");
+//		student1.setRank(Map.of(1, school1, 2, school2));
+//		Student student2 = new Student("Anaïs");
+//		student2.setRank(Map.of(1, school1, 2, school2));
+//		Student student3 = new Student("George");
+//		student3.setRank(Map.of(1, school1, 2, school2));
+//		Student student4 = new Student("Artur");
+//		student4.setRank(Map.of(1, school1, 2, school2));
+//		Student student5 = new Student("Joséphine");
+//		student5.setRank(Map.of(2, school1, 1, school2));
+//		Student student6 = new Student("Stéphanie");
+//		student6.setRank(Map.of(2, school1, 1, school2));
+//		Student student7 = new Student("Victor");
+//		student7.setRank(Map.of(2, school1, 1, school2));
+//
+//		school1.setRank(
+//				Map.of(1, student1, 2, student2, 3, student3, 4, student4, 5, student5, 6, student6, 7, student7));
+//		school2.setRank(
+//				Map.of(2, student1, 1, student2, 3, student3, 4, student4, 5, student5, 6, student6, 7, student7));
+//
+//		schools.add(school1);
+//		schools.add(school2);
+//		students.add(student1);
+//		students.add(student2);
+//		students.add(student3);
+//		students.add(student4);
+//		students.add(student5);
+//		students.add(student6);
+//		students.add(student7);
+//
+//		return true;
+//	}
 }

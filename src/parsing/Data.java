@@ -5,7 +5,6 @@ import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import jdk.jfr.StackTrace;
 import parcoursup.Element;
 import parcoursup.Main;
 
